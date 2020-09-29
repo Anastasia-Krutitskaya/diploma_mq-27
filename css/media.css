@@ -10,6 +10,12 @@
   .menu {
     display: none;
   }
+  .blog-menu::before {
+    display: block;
+  }
+  .blog-menu::after {
+    display: block;
+  }
   .trends-wrapper {
     flex-wrap: wrap;
   }
@@ -66,10 +72,19 @@
 @media (max-width: 767px) {
   .logo {
     width: 280px;
-    margin: 200px auto 0;
+    margin: 200px auto 30px;
+  }
+  .blog-title {
+    width: 70%;
   }
   .blog-menu {
     margin-bottom: 0;
+  }
+  .blog-menu::before {
+    right: 5%;
+  }
+  .blog-menu::after {
+    right: 5%;
   }
   .blog {
     padding-bottom: 200px;
