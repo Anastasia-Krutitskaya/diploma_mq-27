@@ -76,7 +76,7 @@ button {
   height: 8px;
   border-bottom: 2px solid #fff;
   position: absolute;
-  right: 2%;
+  right: 0%;
   top: 10%;
   display: none;
 }
@@ -89,7 +89,7 @@ button {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   position: absolute;
-  right: 2%;
+  right: 0%;
   top: 10%;
   display: none;
 }
@@ -151,15 +151,13 @@ h1 {
 }
 
 .trends-wrapper {
-  display: -webkit-flex;
-  display: -ms-flex;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
 
 .trend {
-  width: calc(25%-3px);
-  max-width: 450px;
+  width: calc(25% - 3px);
   box-sizing: border-box;
   position: relative;
   margin-right: 4px;
@@ -182,7 +180,7 @@ h1 {
 }
 
 .trend-img {
-  max-width: 100%;
+  width: 100%;
   min-width: 163px;
   display: block;
 }
@@ -215,16 +213,24 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .articles {
-  width: 67%;
+  width: calc(1170px - 116px - 270px);
 }
 
 .article {
   display: flex;
   margin-bottom: 58px;
+}
+
+.article-preview {
+  display: block;
+}
+
+.article-img {
+
+  display: block;
 }
 
 .article:last-child {
@@ -279,7 +285,8 @@ h2 {
 }
 
 aside {
-  width: 23%;
+  width: 270px;
+  margin-left: 116px;
 }
 
 .post {
@@ -290,6 +297,14 @@ aside {
 
 .post:last-child {
   margin-bottom: 0;
+}
+
+.post-preview {
+  display: block;
+}
+
+.post-img {
+  display: block;
 }
 
 .post-content {
@@ -449,19 +464,25 @@ input:-ms-input-placeholder {
 }
 
 .product-preview {
+  margin: 0 auto;
+  width: 100%;
   display: block;
 }
 
 .product-img {
+  width: 90%;
   display: block;
   margin: 0 auto;
 }
 
 .product-body {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
   border: 3px solid #b59f5b;
   margin: -30px auto 0 auto;
   padding: 40px 25px 25px 25px;
-  box-sizing: border-box;
+
   min-height: 270px;
 }
 
@@ -576,7 +597,8 @@ footer {
 }
 
 .popup-container {
-  max-width: 300px;
+  box-sizing: border-box;
+  max-width: 350px;
   width: 95%;
   margin: auto;
   padding: 50px 25px;

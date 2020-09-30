@@ -28,25 +28,28 @@
     margin-right: 0.5%;
   }
  .blog-content {
-   justify-content: space-around;
    width: 90vw;
  }
-
- .articles {
-   width: 395px
- }
  .article {
-   flex-direction: column;
-   max-width: 381px;
+  flex-direction: column;
+ }
+ .article-img {
+   width: 100%;
  }
  .article-content {
-   margin-left: 0;
+  margin-left: 0;
+ }
+ .article-tags {
+   margin-top: 10px;
+ }
+ .article-title {
+   margin-top: 10px;
  }
  .article-text {
    margin-top: 30px;
  }
  aside {
-   width: 275px;
+   margin-left: 35px;
  }
 
  .products-wrapper {
@@ -55,19 +58,30 @@
  }
 
  .product {
-   width: 46%;
-   margin-right: 2%;
-   margin-left: 2%;
+   width: calc(50% - 12px);
  }
-
+ .product:nth-child(odd) {
+   margin-right: 12px;
+   margin-left: 0;
+ }
+ .product:nth-child(even) {
+   margin-left: 12px;
+   margin-right: 0;
+ }
  .product-body {
-   max-width: 335px;
+
  }
 
  .media {
    width: 90vw;
  }
 }
+
+ /* @media (min-width: 768px) and (max-width: 950px) {
+  aside {
+    margin-left: 35px;
+  }
+} */
 
 @media (max-width: 767px) {
   .logo {
@@ -81,10 +95,10 @@
     margin-bottom: 0;
   }
   .blog-menu::before {
-    right: 5%;
+    right: 2%;
   }
   .blog-menu::after {
-    right: 5%;
+    right: 2%;
   }
   .blog {
     padding-bottom: 200px;
@@ -137,6 +151,14 @@
     width: 95%;
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: 45px;
+  }
+
+  .product:nth-child(odd) {
+    margin-right: 0;
+  }
+  .product:nth-child(even) {
+    margin-left: 0;
   }
 
   .search {
@@ -149,5 +171,35 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
 
+@media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px)  {
+  .trends-wrapper {
+    flex-wrap: wrap;
+  }
+  .trend {
+    width: 49.5%;
+    margin-bottom: 0.5%;
+    margin-right: 0;
+  }
+  .trend:nth-child(odd) {
+    margin-right: 0.5%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .trends-wrapper {
+    flex-wrap: wrap;
+  }
+  .trend {
+    width: 49.5%;
+    margin-bottom: 0.5%;
+    margin-right: 0;
+  }
+  .trend:nth-child(odd) {
+    margin-right: 0.5%;
+  }
+  .trend-content {
+    padding: 10px 10px;
+  }
 }
