@@ -87,6 +87,10 @@ button {
   display: none;
 }
 
+.burger-button:active, .burger-button:focus {
+  outline: none;
+}
+
 .burger-line {
   background-color: rgba(0, 0, 0, 0);
   width: 24px;
