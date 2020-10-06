@@ -69,23 +69,16 @@ button {
   margin-bottom: 120px;
 }
 
-.blog-menu::before {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 8px;
-  border-bottom: 2px solid #fff;
-  position: absolute;
-  right: 0%;
-  top: 10%;
-  display: none;
-}
 
-.blog-menu::after {
-  content: "";
-  display: block;
+.burger-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
   width: 24px;
-  height: 14px;
+  height: 18px;
+  border: none;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   position: absolute;
@@ -93,6 +86,18 @@ button {
   top: 10%;
   display: none;
 }
+
+.burger-line {
+  background-color: rgba(0, 0, 0, 0);
+  width: 24px;
+  height: 4px;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  display: none;
+}
+
 
 .logo {
   width: 186px;
@@ -164,7 +169,7 @@ h1 {
 }
 
 .trend-content {
-  border: 3px solid #b59f5b;
+  border: 3px solid #b59f5b8a;
   box-sizing: border-box;
   width: 90%;
   position: absolute;
@@ -174,6 +179,10 @@ h1 {
   padding: 25px 23px;
 }
 
+.trend-tags {
+  margin-top: 0 !important;
+  line-height: 1em;
+}
 
 .trend-preview {
   display: block;
@@ -285,7 +294,7 @@ h2 {
 }
 
 aside {
-  width: 270px;
+  width: 272px;
   margin-left: 116px;
 }
 
@@ -349,14 +358,20 @@ h3 {
 input::-webkit-input-placeholder {
   color: #707171;
   font-style: normal;
+  font-size: 13px;
+  font-family:'Open-sans 400';
 }
-input:-moz-placeholder {
+input::-moz-placeholder {
   color: #707171;
   font-style: normal;
+  font-size: 13px;
+  font-family:'Open-sans 400';
 }
-input:-ms-input-placeholder {
+input::-ms-input-placeholder {
   color: #707171;
   font-style: normal;
+  font-size: 13px;
+  font-family:'Open-sans 400';
 }
 
 .field {
@@ -425,7 +440,7 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
   font-family: 'Open-sans 700';
   border: 3px solid #ededed;
-  padding: 7px 10px;
+  padding: 7px 12px;
   margin: 6px 3px;
 }
 
