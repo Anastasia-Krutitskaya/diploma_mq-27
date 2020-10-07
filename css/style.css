@@ -91,6 +91,15 @@ button {
   outline: none;
 }
 
+.burger-button:hover {
+  border-top: 2px solid #cbb778;
+  border-bottom: 2px solid #cbb778;
+}
+
+.burger-button:hover .burger-line {
+    border-bottom: 2px solid #cbb778;
+}
+
 .burger-line {
   background-color: rgba(0, 0, 0, 0);
   width: 24px;
@@ -135,6 +144,10 @@ button {
     text-transform: uppercase;
     font-size: 13px;
     color: #fff;
+}
+
+.menu-link:active,  .menu-link:hover{
+  text-decoration: underline;
 }
 
 .blog-title {
@@ -183,6 +196,12 @@ h1 {
   padding: 25px 23px;
 }
 
+.trend-content:hover {
+  border: 3px solid #b59f5b;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .trend-tags {
   margin-top: 0 !important;
   line-height: 1em;
@@ -217,6 +236,26 @@ h1 {
 
 .trend-title a {
   color: #fff;
+}
+
+
+
+.trends-title a:hover,
+.article-title a:hover {
+  color: #b59f5b;
+  transition: 0.5s;
+}
+
+.article-tags a:hover {
+  color: #756639;
+  transition: 0.5s;
+}
+
+.sidebar-title:hover,
+.post-content a:hover {
+  cursor: pointer;
+  color: #b59f5b;
+  transition: 0.5s;
 }
 
 .blog-content {
@@ -292,6 +331,16 @@ h2 {
   font-size: 12px;
 }
 
+.author {
+  border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.author:hover {
+  /* letter-spacing: 0.1em;
+  transition: 0.5s; */
+  color: #b59f5b;
+}
+
 .article-text {
  margin-top: 48px;
  font-size: 15px;
@@ -353,6 +402,8 @@ h3 {
   margin-top: 10px;
 }
 
+
+
 .search {
   width: 271px;
   position: relative;
@@ -403,6 +454,12 @@ input::-ms-input-placeholder {
 
 .search-button:active, .search-button:focus {
   outline: none;
+  color: #9b8541;
+}
+
+.search-button:hover .search-img {
+  width: 24px;
+  transition: 0.5s;
 }
 
 .search-img {
@@ -417,7 +474,7 @@ input::-ms-input-placeholder {
   margin-top: 19px;
   width: 271px;
   height: 50px;
-  border: none;
+  border: 2px solid  rgba(0,0,0,0);
   background-color: #b59f5b;
   text-transform: uppercase;
   font-size: 14px;
@@ -428,6 +485,12 @@ input::-ms-input-placeholder {
 
 .email-button:active, .email-button:focus {
   outline: none;
+}
+
+.email-button:hover {
+    background-color: #fff;
+    color: #b59f5b;
+    border: 2px solid  #b59f5b;
 }
 
 .tags {
@@ -448,8 +511,18 @@ input::-ms-input-placeholder {
   margin: 6px 3px;
 }
 
+.tag-list a:hover {
+  color: #9b8541;
+  border: 3px solid #e1d7bd;
+}
+
 .topics {
   margin-top: 54px;
+}
+
+.topic-list a:hover {
+  letter-spacing: 0.1em;
+  transition: 0.5em;
 }
 
 .topics a {
@@ -513,6 +586,10 @@ input::-ms-input-placeholder {
   color: #b59f5b
 }
 
+.product-description p a:hover {
+  color: #756639;
+}
+
 .product-footer {
   display: -webkit-flex;
   display: -ms-flex;
@@ -536,7 +613,8 @@ input::-ms-input-placeholder {
 }
 
 .product-button {
-  border: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
   background-color: #b59f5b;
   padding: 16px 26px;
   cursor: pointer;
@@ -544,6 +622,17 @@ input::-ms-input-placeholder {
   font-size: 14px;
   font-family: 'Open-sans 700';
   color: #fff;
+}
+
+.product-button:active, .product-button:focus {
+  outline: none;
+}
+
+.product-button:hover {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #b59f5b;
+  border: 2px solid  #b59f5b;
 }
 
 span {
@@ -583,6 +672,10 @@ footer {
 
 .media a {
   margin-right: 18px;
+}
+
+.media a:hover {
+ border-bottom: 2px solid #000;
 }
 
 .media a:last-child {
