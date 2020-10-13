@@ -145,7 +145,7 @@
   }
 
   .article {
-    width: 95%;
+    width: 100%;
   }
 
   .article-text {
@@ -159,8 +159,8 @@
   }
 
   aside {
-    width: 95%;
-    max-width: 450px;
+    width: 100%;
+    max-width: 767px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
